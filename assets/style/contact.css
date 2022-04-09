@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(gold, goldenrod);
+}
+
+.navbar{
+    background-image:linear-gradient(to top, #ffffff, #ffffff);
+    font-style: italic;
+}
+
+/* BRAND NAME STYLE */
+.navbar-brand{
+    padding: 0 50px;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 25px;
+    background: -webkit-linear-gradient(rgb(255, 255, 81),rgb(255, 228, 73), rgb(150, 109, 6));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* LINK STYLE */
+.nav-link {
+    text-align: center;
+    display: inline-block;
+    color: darkgoldenrod;
+    font-size: 17px;
+    margin: 0 15px;
+    line-height: 30px;
+    padding: 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.navbar a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height:2.05px;
+    background: gold;
+    color: darkgoldenrod;
+    transition: width .4s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    transition: width .4s;
+}
+
+.get_in_touch{
+    max-width: 800PX;
+    margin: 50PX auto;
+    position: relative;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 9px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30PX;
+}
+
+.get_in_touch h1{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 48px;
+    padding-bottom: 20px;
+    color: goldenrod;
+    background: linear-gradient(rgb(214, 165, 40), rgb(255, 235, 121), rgb(150, 109, 5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-row .form-group{
+    position: relative;
+    margin: 32px 0;
+}
+
+.form-row .form-control{
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: goldenrod;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    
+}
+
+.form-row .label{
+    left: 20px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: goldenrod;
+    cursor: text;
+    
+}
+
+#form-group .submit-btn{
+    display: inline-block;
+    color: white;
+    background-image: linear-gradient(rgb(255, 239, 146),goldenrod);
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}
+
+#contact-option{
+    max-width: 800PX;
+    color: goldenrod;
+    margin: 50PX auto;
+    position: relative;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 9px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30PX;
+}
+
+#icon{
+    font-size: 100px;
+    text-align: center;
+    color:goldenrod;
+    text-decoration: none;
+}
+
+.icon1{
+    color: goldenrod;
+}
+
+.icon1:hover{
+    color: green;
+}
+
+.icon2{
+    color: goldenrod;
+}
+
+.to-top{
+    background: linear-gradient(rgb(1, 1, 32), blue);
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.footer{
+    background-color: rgb(48, 48, 48);
+    color: goldenrod;
+    text-align: center;
+    height: 40px;
+    font-size: 20px;
+}
+
